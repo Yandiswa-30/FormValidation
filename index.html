@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <!--<link href="C:\Users\Grace Ndarane\OneDrive - Tshwane University of Technology\Documents\JavaScriptPrac\design.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+   
+   <div class="container">
+       <h1>Sign Up</h1>
+       <div class="row">
+           <form class="col s6" id="myForm" novalidate>
+               <div class="row">
+                   <div class="input-field col s6">
+                       
+                       <input type="text" name="first name" id="firstName" placeholder="First Name" onfocusout="validateFirstName()" />
+                            <span class="helper-text"></span>
+                   </div>
+                   <div class="input-field col s6">
+                    
+                    <input type="text" name="last name" id="lastName" placeholder="Last Name" onfocusout="validateLastName()" >
+                         <span class="helper-text"></span>
+                </div>
+               </div>
+               <div class="input-field col s6">
+                   
+                   <input type="password" name="Password" id="password" placeholder="Password" onfocusout="validatePassword()" >
+                   <span class="helper-text"></span>
+               </div>
+               <div class="input-field col s6">
+                
+                <input type="password" name="Confirm password" id="confirmPassword" placeholder="Confirm Password" onfocusout="validateConfirmPassword()" >
+                <span class="helper-text"></span>
+                <div class="row">
+                    <div class="input-field col s12">
+                        
+                        <input type="email" name="" id="email" placeholder="Email" onfocusout="validateEmail()" >
+                        <span class="helper-text"></span>
+
+                    </div>
+                </div>
+                <button class="btn" type="submit">Sign Up</button>
+           </form>
+            <div class="col s6">
+                <!--<img src="https://th.bing.com/th/id/OIP.0SvbIDogYdv7snh7eVlBYAHaE8?w=250&h=180&c=7&o=5&pid=1.7" id="styleImg" style="width:100%; border-radius: 6px; left:600px;">-->
+            </div>
+       </div>
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="JsPractice.js"></script> 
+</body>
+</html>
